@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book List</title>
+  <!-- Connect your JavaScript here -->
+<script src="..." defer></script>
+
+<style>
+  .book-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+</style>
+</head>
+<body>
+  <h2>Create New Book</h2>
+  <!-- Complete the form based on the Book schema -->
+  <form>
+    <label>Title: </label>
+    <input type="..." name="..." />
+
+    <!-- Add the rest of the Book attributes -->
+
+
+    <button type="...">Submit</button>
+  </form>
+
+  <h1>List of Books</h1>
+
+  <% for(let i = 0; i < books.length; i++) { %>
+    <div class="book-box">
+      <p><b>Title:</b> <%= books[i].title %></p>
+      <p><b>Author:</b> <%= books[i].author %></p>
+      <p><b>Year Published:</b> <%= books[i].published %></p>
+    </div>
+  <% } %>
+
+</body>
+</html>
